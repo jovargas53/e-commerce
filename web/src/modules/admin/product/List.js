@@ -35,10 +35,10 @@ class List extends PureComponent {
 
   remove = (id) => {
     if (id > 0) {
-      let check = confirm('Are you sure you want to delete this product?')
+      let check = confirm('Está seguro que quiere borrar este producto?')
 
       if (check) {
-        this.props.messageShow('Deleting, please wait...')
+        this.props.messageShow('Borrando, por favor espere...')
 
         this.props.removeProduct({ id })
           .then(response => {
@@ -46,16 +46,16 @@ class List extends PureComponent {
               if (response.data.errors && response.data.errors.length > 0) {
                 this.props.messageShow(response.data.errors[0].message)
               } else {
-                this.props.messageShow('Product deleted successfully.')
+                this.props.messageShow('Producto borrado exitosamente.')
 
                 this.props.getProductList(false)
               }
             } else {
-              this.props.messageShow('Please try again.')
+              this.props.messageShow('Por favor intente de nuevo.')
             }
           })
           .catch(error => {
-            this.props.messageShow('There was some error. Please try again.')
+            this.props.messageShow('Ha ocurrido un error. Por favor intente de nuevo.')
 
           })
           .then(() => {
@@ -117,7 +117,7 @@ class List extends PureComponent {
                   isLoading
                     ? <tr>
                         <td colSpan="6">
-                          <Loading message="loading products..."/>
+                          <Loading message="Cargando productos..."/>
                         </td>
                       </tr>
                     : list.length > 0
@@ -156,7 +156,7 @@ class List extends PureComponent {
                         ))
                       : <tr>
                           <td colSpan="6">
-                            <EmptyMessage message="No products to show."/>
+                            <EmptyMessage message="No hay productos para mostrar."/>
                           </td>
                         </tr>
                 }

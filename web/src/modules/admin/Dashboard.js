@@ -16,7 +16,7 @@ const Dashboard = () => (
   <div>
     {/* SEO */}
     <Helmet>
-      <title>Dashboard - Admin - Crate</title>
+      <title>Tablero - Admin - Caja</title>
     </Helmet>
 
     {/* Top menu bar */}
@@ -25,7 +25,7 @@ const Dashboard = () => (
     {/* Page Content */}
     <Grid style={{ padding: '2em' }}>
       <GridCell>
-        <p style={{ textAlign: 'center', color: grey3 }}>Nothing here yet. Choose an item from admin menu.</p>
+        <p style={{ textAlign: 'center', color: grey3 }}>No hay nada aún aquí. Escoja un ítem del menu admin.</p>
       </GridCell>
     </Grid>
   </div>

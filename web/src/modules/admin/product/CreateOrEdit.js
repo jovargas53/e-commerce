@@ -66,7 +66,7 @@ class CreateOrEdit extends Component {
         }
       })
       .catch(error => {
-        this.props.messageShow('There was some error fetching product types. Please try again.')
+        this.props.messageShow('Ha ocurrido un error al buscar los tipos de productos. Por favor intente de nuevo.')
       })
 
     // Get user genders
@@ -85,7 +85,7 @@ class CreateOrEdit extends Component {
         }
       })
       .catch(error => {
-        this.props.messageShow('There was some error fetching product types. Please try again.')
+        this.props.messageShow('Ocurrieron algunos errores buscando los tipos de productos. Por favor intente de nuevo.')
       })
 
     // Get product details (edit case)
@@ -105,7 +105,7 @@ class CreateOrEdit extends Component {
           }
         })
         .catch(error => {
-          this.props.messageShow('There was some error fetching product types. Please try again.')
+          this.props.messageShow('Ocurrieron algunos errores buscando los tipos de productos. Por favor intente de nuevo.')
         })
     }
   }
@@ -139,7 +139,7 @@ class CreateOrEdit extends Component {
       isLoading: true
     })
 
-    this.props.messageShow('Saving product, please wait...')
+    this.props.messageShow('Guardando producto, por favor espere...')
 
     // Save product
     this.props.productCreateOrUpdate(this.state.product)
@@ -151,13 +151,13 @@ class CreateOrEdit extends Component {
         if (response.data.errors && response.data.errors.length > 0) {
           this.props.messageShow(response.data.errors[0].message)
         } else {
-          this.props.messageShow('Product saved successfully.')
+          this.props.messageShow('Producto guardado exitosamente.')
 
           this.props.history.push(admin.productList.path)
         }
       })
       .catch(error => {
-        this.props.messageShow('There was some error. Please try again.')
+        this.props.messageShow('Ha ocurrido un error. Por favor intente de nuevo.')
 
         this.setState({
           isLoading: false
@@ -171,7 +171,7 @@ class CreateOrEdit extends Component {
   }
 
   onUpload = (event) => {
-    this.props.messageShow('Uploading file, please wait...')
+    this.props.messageShow('Cargando archivo, por favor espere...')
 
     this.setState({
       isLoading: true
@@ -184,7 +184,7 @@ class CreateOrEdit extends Component {
     this.props.upload(data)
       .then(response => {
         if (response.status === 200) {
-          this.props.messageShow('File uploaded successfully.')
+          this.props.messageShow('Archivo cargado exitosamente.')
 
           let product = this.state.product
           product.image = `/images/uploads/${ response.data.file }`
@@ -193,11 +193,11 @@ class CreateOrEdit extends Component {
             product
           })
         } else {
-          this.props.messageShow('Please try again.')
+          this.props.messageShow('Por favor intente de nuevo.')
         }
       })
       .catch(error => {
-        this.props.messageShow('There was some error. Please try again.')
+        this.props.messageShow('Ha ocurrido un error. Por favor intente de nuevo.')
 
       })
       .then(() => {

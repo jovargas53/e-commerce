@@ -59,7 +59,7 @@ class List extends PureComponent {
                   isLoading
                     ? <tr>
                         <td colSpan="6">
-                          <Loading message="loading crates..."/>
+                          <Loading message="Cargando cajas..."/>
                         </td>
                       </tr>
                     : list.length > 0
@@ -80,7 +80,7 @@ class List extends PureComponent {
                         ))
                       : <tr>
                           <td colSpan="6">
-                            <EmptyMessage message="No subscriptions to show."/>
+                            <EmptyMessage message="No hay suscripciones para mostrar."/>
                           </td>
                         </tr>
                 }

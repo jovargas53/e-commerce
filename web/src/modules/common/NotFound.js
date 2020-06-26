@@ -33,13 +33,13 @@ const NotFound = () => (
           <img src={`${ APP_URL }/images/crate-broken.png`} alt="404" style={{ width: '10em' }}/>
         </p>
 
-        <H3 font="secondary">Page you are looking for does not exists or has removed. It's 404.</H3>
+        <H3 font="secondary">La página que busca no existe o ha sido removida. Error 404.</H3>
 
-        <p style={{ marginTop: '2em' }}>What can you do?</p>
+        <p style={{ marginTop: '2em' }}>Qué puede hacer?</p>
 
-        <p style={{ marginTop: '0.5em' }}>You can go to <Link to={home.home.path}>home page.</Link> or contact us for
-          any
-          help.</p>
+        <p style={{ marginTop: '0.5em' }}>Puere ir a<Link to={home.home.path}>home page.</Link> o contáctenos por
+          si requiere
+          ayuda.</p>
       </GridCell>
     </Grid>
   </div>
