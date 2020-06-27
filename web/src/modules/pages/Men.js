@@ -22,7 +22,7 @@ const Men = (props) => (
   <Grid alignCenter={true} style={{ padding: '2em' }}>
     {/* SEO */}
     <Helmet>
-      <title>Monthly supply of clothes and accessories for Men - Crate</title>
+      <title>Suministro mensual de ropa y accesorios para hombres - Caja</title>
     </Helmet>
 
     {/* Left Content - Image Collage */}
@@ -50,20 +50,20 @@ const Men = (props) => (
 
     {/* Right Content */}
     <GridCell style={{ textAlign: 'center' }}>
-      <H2 font="secondary">Monthly crates for Men</H2>
+      <H2 font="secondary">Cajas mensuales para hombres</H2>
 
       <H5 style={{ marginTop: '0.5em' }}>
-        Save time. Look great. The personal styling service customized to your fit, lifestyle & spending preferences.
+      Ahorrar tiempo. Luce genial. El servicio de estilo personal personalizado según sus preferencias de ajuste, estilo de vida y preferencias de gastos.
       </H5>
 
       {/* Call to action */}
       {
         props.user.isAuthenticated
           ? <Link to={crateRoutes.list.path}>
-              <Button theme="secondary" style={{ marginTop: '1em' }}>Get Subscription</Button>
+              <Button theme="secondary" style={{ marginTop: '1em' }}>Obtén tu suscripción</Button>
             </Link>
           : <Link to={userRoutes.signup.path}>
-              <Button theme="secondary" style={{ marginTop: '1em' }}>Get Started</Button>
+              <Button theme="secondary" style={{ marginTop: '1em' }}>Empieza</Button>
             </Link>
       }
     </GridCell>

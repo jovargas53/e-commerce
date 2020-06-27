@@ -33,16 +33,15 @@ class List extends PureComponent {
       <div>
         {/* SEO */}
         <Helmet>
-          <title>Crates for everyone! - Crate</title>
+          <title>Cajas para todos! - Crate</title>
         </Helmet>
 
         {/* Top title bar */}
         <Grid style={{ backgroundColor: grey }}>
           <GridCell style={{ padding: '2em', textAlign: 'center' }}>
-            <H3 font="secondary">Crates for everyone!</H3>
+            <H3 font="secondary">Cajas para todos!</H3>
 
-            <p style={{ marginTop: '1em', color: grey2 }}>You can choose crate which suits your need. You can also
-              subscribe to multiple crates.</p>
+            <p style={{ marginTop: '1em', color: grey2 }}>Puedes elegir una caja que se adapte a tus necesidades. También te puedes suscribir a varias cajas.</p>
           </GridCell>
         </Grid>
 
@@ -58,7 +57,7 @@ class List extends PureComponent {
                         <CrateItem crate={crate}/>
                       </div>
                     ))
-                    : <EmptyMessage message="No crates to show" />
+                    : <EmptyMessage message="No hay cajas para mostrar" />
             }
           </GridCell>
         </Grid>

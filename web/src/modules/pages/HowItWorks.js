@@ -23,7 +23,7 @@ const HowItWorks = (props) => (
   <div>
     {/* SEO */}
     <Helmet>
-      <title>How it works? - Crate</title>
+      <title>Cómo funciona? - Caja</title>
     </Helmet>
 
     {/* Top title bar */}
@@ -31,9 +31,9 @@ const HowItWorks = (props) => (
       <GridCell style={{ padding: '2em', textAlign: 'center' }}>
         <H3 font="secondary">How it works</H3>
 
-        <p style={{ marginTop: '1em', color: grey2 }}>Just 3 easy steps to subscribe and receive your monthly
-          subscription
-          of trendy clothes and accessories</p>
+        <p style={{ marginTop: '1em', color: grey2 }}>Solo 3 sencillos pasos para suscribirse y recibir su inscripción
+          mensual
+          de ropa y accesorios de moda</p>
       </GridCell>
     </Grid>
 
@@ -42,9 +42,9 @@ const HowItWorks = (props) => (
       <GridCell justifyCenter={true} style={{ textAlign: 'center', padding: '8em 0em' }}>
         <Icon size={4} style={{ color: grey3, textShadow: textLevel1 }}>looks_one</Icon>
 
-        <H4 style={{ marginTop: '0.5em', textTransform: 'uppercase' }}>Subscribe to your crate</H4>
+        <H4 style={{ marginTop: '0.5em', textTransform: 'uppercase' }}>Suscríbete a tu caja</H4>
 
-        <p style={{ marginTop: '0.5em', color: grey3 }}>Choose one or multiple crates as per your need.</p>
+        <p style={{ marginTop: '0.5em', color: grey3 }}>Elije una o varias cajas según tu necesidad.</p>
       </GridCell>
 
       <GridCell style={{ background: `url('${ APP_URL }/images/stock/how-it-works/1.jpg') center top no-repeat` }}/>
@@ -57,9 +57,9 @@ const HowItWorks = (props) => (
       <GridCell justifyCenter={true} style={{ textAlign: 'center', padding: '8em 0em' }}>
         <Icon size={4} style={{ color: grey3, textShadow: textLevel1 }}>looks_two</Icon>
 
-        <H4 style={{ marginTop: '0.5em', textTransform: 'uppercase' }}>Receive a Fix Delivery</H4>
+        <H4 style={{ marginTop: '0.5em', textTransform: 'uppercase' }}>Recibe una entrega fija</H4>
 
-        <p style={{ marginTop: '0.5em', color: grey3 }}>Get 3 to 5 pieces of clothing or accessories delivered to your door.</p>
+        <p style={{ marginTop: '0.5em', color: grey3 }}>Obtén de 3 a 5 piezas de ropa o accesorios entregados en tu puerta.</p>
       </GridCell>
     </Grid>
 
@@ -68,9 +68,9 @@ const HowItWorks = (props) => (
       <GridCell justifyCenter={true} style={{ textAlign: 'center', padding: '8em 0em' }}>
         <Icon size={4} style={{ color: grey3, textShadow: textLevel1 }}>looks_3</Icon>
 
-        <H4 style={{ marginTop: '0.5em', textTransform: 'uppercase' }}>Keep what you want</H4>
+        <H4 style={{ marginTop: '0.5em', textTransform: 'uppercase' }}>Mantén lo que quieres</H4>
 
-        <p style={{ marginTop: '0.5em', color: grey3 }}>Only pay for what you keep. Returns are easy and free.</p>
+        <p style={{ marginTop: '0.5em', color: grey3 }}>Solo paga por lo que te quedas. Las devoluciones son fáciles y gratuitas.</p>
       </GridCell>
 
       <GridCell style={{ background: `url('${ APP_URL }/images/stock/how-it-works/3.jpg') center top no-repeat` }}/>

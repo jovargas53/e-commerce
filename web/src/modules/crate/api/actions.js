@@ -44,7 +44,7 @@ export function getList(orderBy = 'DESC', isLoading = true) {
       .catch(error => {
         dispatch({
           type: CRATES_GET_LIST_FAILURE,
-          error: 'Some error occurred. Please try again.',
+          error: 'Algunos errores ocurrieron. Por favor intenta de nuevo.',
           isLoading: false
         })
       })
@@ -75,7 +75,7 @@ export function get(slug, isLoading = true) {
       .catch(error => {
         dispatch({
           type: CRATES_GET_FAILURE,
-          error: 'Some error occurred. Please try again.',
+          error: 'Algunos errores ocurrieron. Por favor intenta de nuevo.',
           isLoading: false
         })
       })
